@@ -1,0 +1,17 @@
+#include <stdio.h>	
+// 관계연산자 => &&(and), ||(or), !(not)
+
+int main(void)
+{
+	int a = 30; 
+	int res; 
+
+	res = (a > 10) && (a < 20); 
+	printf("(a > 10) && (a < 20) : %d \n", res); 
+	res = (a < 10) || (a > 20); 
+	printf("(a < 10) || (a > 20) : %d \n", res); 
+	res = !(a >= 30); 
+	printf("!(a >= 30) : %d", res); 
+
+	return 0; 
+}
