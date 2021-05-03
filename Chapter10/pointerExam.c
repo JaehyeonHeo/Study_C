@@ -4,7 +4,7 @@
 // 함수 선언
 void input_ary(int* pa, int); 
 void print_ary(int* pa, int); 
-void swap_ary(int* pa, int* pb); 
+void swap_ary(int* pa, int* pb, int); 
 
 int main(void)
 {
@@ -17,7 +17,7 @@ int main(void)
 	print_ary(ary, size);  // 배열출력함수 호출
 	
 	printf("거꾸로 배열 : "); 
-	swap_ary(ary, ary);    // 배열순서바꾸는 함수 호출
+	swap_ary(ary, ary, size);    // 배열순서바꾸는 함수 호출
 	print_ary(ary, size);  // 배열출력함수 호출
 
 	return 0; 
@@ -35,16 +35,16 @@ void input_ary(int* pa, int size) //배열입력함수
 	}
 }
 
-void swap_ary(int *pa , int *pb) //배열순서바꾸는 함수
+void swap_ary(int *pa , int *pb, int size) //배열순서바꾸는 함수
 {
 	int i; 
 	int temp;
 
-	for (i = 0; i < 5; i++)
+	for (i = 0; i < size/2; i++)
 	{
 		temp = pa[i]; 
-		pa[i] = pb[10-i-1];
-		pb[10 - i - 1] = temp;
+		pa[i] = pb[size-i-1];
+		pb[size - i - 1] = temp;
 	}
 }
 
