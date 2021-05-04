@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Xsize.c">
+    <ClCompile Include="13-8.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
