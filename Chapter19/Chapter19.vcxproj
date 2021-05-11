@@ -19,13 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="17-12.c" />
+    <ClInclude Include="student.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="19-2.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{aa9b9d3a-f58d-4ba6-89f3-7274259e92c5}</ProjectGuid>
-    <RootNamespace>Chapter17</RootNamespace>
+    <ProjectGuid>{348f8832-31e7-4cda-8aa9-1a4fdc15d242}</ProjectGuid>
+    <RootNamespace>Chapter19</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
