@@ -7,21 +7,25 @@ Study C Language
 - 회원번호로 음수를 입력하면 입력이 종료
 - 총 회원수, 평균 체중, 최고 체중의 회원 정보가 출력된다.
 */
+
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
+
 /*구조체 정의*/
 typedefstruct {
 	int num; 
 	char name[20]; 
 	double weight; 
 }Fitness;
+
 /*함수 선언*/
 void free_ary(Fitness**, int count); 
 void total_number(int count); 
 double average_weight(Fitness**, int count); 
 void print_info(Fitness**, int index);
 int max_weight(Fitness**, int count); 
+
 /*메인함수 시작*/
 int main(void)
 {
@@ -62,12 +66,14 @@ int main(void)
 	free_ary(member, count); // 메모리 동적할당 해제
 	return0; 
 }
+
 /*전체 등록 회원수 반환*/
 void total_number(int count)
 {
 	printf("==================결 과 출 력====================\n");
 	printf("\n<<전체 회원수>>\n=> %d명\n", count);
 }
+
 /*평균 체중 반환*/
 double average_weight(Fitness** pmember, int count)
 {
@@ -80,6 +86,7 @@ double average_weight(Fitness** pmember, int count)
 	avg = (total / count); 
 	return avg; 
 }
+
 /*최대 체중 회원의 index반환*/
 int max_weight(Fitness** pmember, int count)
 {
@@ -97,6 +104,7 @@ int max_weight(Fitness** pmember, int count)
 	}
 	return i;
 }
+
 /*index로 회원 정보 출력*/
 void print_info(Fitness** pmember, int index)
 {
@@ -105,6 +113,7 @@ void print_info(Fitness** pmember, int index)
 	printf("*회원이름 : %s\n", pmember[index]->name);
 	printf("*회원몸무게 : %.2lf\n", pmember[index]->weight);
 }
+
 /*메모리 해제 함수*/
 void free_ary(Fitness** pmember, int count)
 {
