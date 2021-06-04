@@ -1,17 +1,15 @@
 # ✅ Study_C ✅
 ## C 언어 활용 Test
-
-#### <실행화면>
-![회원관리프로그램](https://github.com/JaehyeonHeo/Study_C/blob/main/c%EC%96%B8%EC%96%B4%20%ED%8F%89%EA%B0%80/%ED%94%BC%ED%8A%B8%EB%8B%88%EC%8A%A4%EC%84%BC%ED%84%B0%20%EC%8B%A4%ED%96%89%ED%99%94%EB%A9%B4.png?raw=true "실행화면")
-
-```C
-/*
+```
 회원관리 프로그램
 - 회원번호, 이름, 체중을 입력하고 heap영역에 저장
 - 회원번호로 음수를 입력하면 입력이 종료
 - 총 회원수, 평균 체중, 최고 체중의 회원 정보가 출력된다.
-*/
+```
+#### <실행화면>
+![회원관리프로그램](https://github.com/JaehyeonHeo/Study_C/blob/main/c%EC%96%B8%EC%96%B4%20%ED%8F%89%EA%B0%80/%ED%94%BC%ED%8A%B8%EB%8B%88%EC%8A%A4%EC%84%BC%ED%84%B0%20%EC%8B%A4%ED%96%89%ED%99%94%EB%A9%B4.png?raw=true "실행화면")
 
+```C
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
